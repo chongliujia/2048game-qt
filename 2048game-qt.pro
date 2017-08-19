@@ -4,7 +4,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ExpGame
 TEMPLATE = app
-QMAKE_CXXFLAGS += -std = c++11
+
 
 SOURCES += main.cpp \
     core/subject.cpp \
@@ -14,7 +14,9 @@ SOURCES += main.cpp \
     core/game.cpp \
     gui/qgameboard.cpp \
     gui/qgameoverwindow.cpp \
-    gui/qresetbutton.cpp
+    gui/qresetbutton.cpp \
+    gui/qtile.cpp \
+    gui/mainwindow.cpp
 
 HEADERS += \
     core/board.h \
@@ -24,4 +26,7 @@ HEADERS += \
     core/game.h \
     gui/qgameboard.h \
     gui/qgameoverwindow.h \
-    gui/qresetbutton.h
+    gui/qresetbutton.h \
+    gui/qtile.h \
+    gui/mainwindow.h \
+    gui/qwinwindow.h

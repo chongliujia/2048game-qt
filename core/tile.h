@@ -5,9 +5,9 @@
 
 class Tile{
 public:
-    Title() {
+    Tile() {
         value = 2;
-        upgradedThisMove = false;
+        upgratedThisMove = false;
     }
 
     Tile(const Tile& other){
@@ -26,7 +26,7 @@ public:
         value *= EXP_MULTIPLIER;
     }
     void setUpgratedThisMove(bool updated){
-        this->upgradeThisMove = updated;
+        this->upgratedThisMove = updated;
     }
     bool getUpgratedThisMove() const{
         return this->upgratedThisMove;

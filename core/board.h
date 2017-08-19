@@ -25,7 +25,7 @@ public:
     void move(Direction direction);
     bool full() const;
     int getPointsScoredLastRound() const{
-        return pointsScoredLastRound;
+        return pointScoredLastRound;
     }
     bool isTileCollisionLastRound() const{
         return tileCollisionLastRound;

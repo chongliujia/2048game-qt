@@ -13,8 +13,8 @@ public:
     QResetButton* getResetBtn() const;
 
 signals:
-public:
-    slots;
+public slots:
+
 private:
     QResetButton* reset;
 
