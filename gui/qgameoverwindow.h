@@ -1,7 +1,7 @@
 #ifndef QGAMEOVERWINDOW_H
 #define QGAMEOVERWINDOW_H
 
-#include <Qwidget>
+#include <QWidget>
 
 class QResetButton;
 

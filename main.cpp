@@ -1,9 +1,22 @@
+#include "gui/mainwindow.h"
+#include <QApplication>
+
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
 
-using namespace std;
+#include "core/board.h"
+#include "gui/qgameboard.h"
+#include "gui/qgameoverwindow.h"
 
-int main()
+
+int main(int argc, char* argv[])
 {
-    cout << "Hello World!" << endl;
-    return 0;
+    QApplication a(argc, argv);
+
+    srand(time(NULL));
+    QGameBoard board;
+    board.show();
+
+    return a.exec();
 }

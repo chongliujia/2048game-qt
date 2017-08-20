@@ -46,7 +46,7 @@ void QTile::draw(){
             setStyleSheet("QTile { background: rgb(237, 207, 114); color: rgb(255, 255, 255); font: bold; border-radius: 10px; font: 40pt; }");
             break;
 
-        case 256:
+        case 256: {
             QGraphicsDropShadowEffect *dse = new QGraphicsDropShadowEffect();
             dse->setColor(Qt::blue);
             dse->setBlurRadius(20);
@@ -54,8 +54,9 @@ void QTile::draw(){
             setGraphicsEffect(dse);
             setStyleSheet("QTile { background: rgb(237, 204, 97); color: rgb(255, 255, 255); font: bold; border-radius: 10px; font: 40pt; }");
             break;
+        }
 
-        case 512:
+        case 512:{
             QGraphicsDropShadowEffect *dse = new QGraphicsDropShadowEffect();
             dse->setColor(Qt::blue);
             dse->setBlurRadius(30);
@@ -63,8 +64,10 @@ void QTile::draw(){
             setGraphicsEffect(dse);
             setStyleSheet("QTile { background: rgb(237, 204, 97); color: rgb(255, 255, 255); font: bold; border-radius: 10px; font: 40pt; }");
             break;
+        }
 
-        case 1024:
+
+        case 1024: {
             QGraphicsDropShadowEffect *dse = new QGraphicsDropShadowEffect();
             dse->setColor(Qt::blue);
             dse->setBlurRadius(40);
@@ -72,8 +75,9 @@ void QTile::draw(){
             setGraphicsEffect(dse);
             setStyleSheet("QTile { background: rgb(237, 204, 97); color: rgb(255, 255, 255); font: bold; border-radius: 10px; font: 40pt; }");
             break;
+        }
 
-        case 2048:
+        case 2048: {
             QGraphicsDropShadowEffect *dse = new QGraphicsDropShadowEffect();
             dse->setColor(Qt::blue);
             dse->setBlurRadius(50);
@@ -81,6 +85,7 @@ void QTile::draw(){
             setGraphicsEffect(dse);
             setStyleSheet("QTile { background: rgb(237, 204, 97); color: rgb(255, 255, 255); font: bold; border-radius: 10px; font: 40pt; }");
             break;
+        }
 
         default:
             setStyleSheet("QTile { background: rgb(238, 228, 218); color: rgb(119, 110, 101); font: bold; border-radius: 10px; font: 40pt; }");

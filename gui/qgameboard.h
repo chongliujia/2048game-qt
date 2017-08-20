@@ -20,7 +20,7 @@ class QLabel;
 class QGameBoard : public QWidget, public Observer{
     Q_OBJECT
 public:
-    explicit QGameBoard(Qwidget *parent = 0);
+    explicit QGameBoard(QWidget *parent = 0);
     ~QGameBoard();
 
     void notify();

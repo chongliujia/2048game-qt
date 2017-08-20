@@ -2,9 +2,9 @@ QT     += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = ExpGame
+TARGET = 2048Game
 TEMPLATE = app
-
+QMAKE_CXXFLAGS += -std=c++11
 
 SOURCES += main.cpp \
     core/subject.cpp \
